@@ -1,0 +1,14 @@
+{
+  "name": "discord-bot",
+  "version": "0.0.0",
+  "description": "Discord-Bot",
+  "main": "app.js",
+  "type": "module",
+  "author": {
+    "name": ""
+  },
+  "dependencies": {
+    "discord.js": "^13.6.0",
+    "fs": "^0.0.1-security"
+  }
+}

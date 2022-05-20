@@ -37,6 +37,14 @@ client.on("messageCreate", msg => {
                     return
                 }
                 var limit = parseInt(cmddecompiled[1])
+                if(limit > 21600){
+                    msg.reply("Specify a value lower then 21600.")
+                    return
+                }
+                if(limit < 0){
+                    msg.reply("Specify a value larger than -1.")
+                    return
+                }
                 msg.channel.setRateLimitPerUser(limit)
                 msg.reply(`Updated channel slowmode to ${limit}`)
                 break
